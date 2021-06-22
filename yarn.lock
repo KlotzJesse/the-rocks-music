@@ -1586,6 +1586,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-helmet@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.1.tgz#4fde22cbcaa1b461642e1d719cc6162d95acb110"
+  integrity sha512-VmSCMz6jp/06DABoY60vQa++h1YFt0PfAI23llxBJHbowqFgLUL0dhS1AQeVPNqYfRp9LAfokrfWACTNeobOrg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "17.0.11"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.11.tgz"
@@ -1650,9 +1657,9 @@
   resolved "https://registry.npmjs.org/@types/yoga-layout/-/yoga-layout-1.9.2.tgz"
   integrity sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==
 
-"@typescript-eslint/eslint-plugin@^4.15.2":
+"@typescript-eslint/eslint-plugin@^4.15.2", "@typescript-eslint/eslint-plugin@^4.28.0":
   version "4.28.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.28.0.tgz"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.28.0.tgz#1a66f03b264844387beb7dc85e1f1d403bd1803f"
   integrity sha512-KcF6p3zWhf1f8xO84tuBailV5cN92vhS+VT7UJsPzGBm9VnQqfI9AsiMUFUCYHTYPg1uCCo+HyiDnpDuvkAMfQ==
   dependencies:
     "@typescript-eslint/experimental-utils" "4.28.0"
@@ -1675,9 +1682,9 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^4.15.2":
+"@typescript-eslint/parser@^4.15.2", "@typescript-eslint/parser@^4.28.0":
   version "4.28.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-4.28.0.tgz"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.28.0.tgz#2404c16751a28616ef3abab77c8e51d680a12caa"
   integrity sha512-7x4D22oPY8fDaOCvkuXtYYTQ6mTMmkivwEzS+7iml9F9VkHGbbZ3x4fHRwxAb5KeuSkLqfnYjs46tGx2Nour4A==
   dependencies:
     "@typescript-eslint/scope-manager" "4.28.0"
@@ -2234,19 +2241,7 @@ atob@^2.1.2:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.2.4:
-  version "10.2.6"
-  resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.2.6.tgz"
-  integrity sha512-8lChSmdU6dCNMCQopIf4Pe5kipkAGj/fvTMslCsih0uHpOrXOPUEVOmYMMqmw3cekQkSD7EhIeuYl5y0BLdKqg==
-  dependencies:
-    browserslist "^4.16.6"
-    caniuse-lite "^1.0.30001230"
-    colorette "^1.2.2"
-    fraction.js "^4.1.1"
-    normalize-range "^0.1.2"
-    postcss-value-parser "^4.1.0"
-
-autoprefixer@^10.2.6:
+autoprefixer@^10.2.4, autoprefixer@^10.2.6:
   version "10.2.6"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.6.tgz#aadd9ec34e1c98d403e01950038049f0eb252949"
   integrity sha512-8lChSmdU6dCNMCQopIf4Pe5kipkAGj/fvTMslCsih0uHpOrXOPUEVOmYMMqmw3cekQkSD7EhIeuYl5y0BLdKqg==
@@ -4055,6 +4050,11 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
+eslint-config-prettier@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
+  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
+
 eslint-config-react-app@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/eslint-config-react-app/-/eslint-config-react-app-6.0.0.tgz"
@@ -4134,14 +4134,21 @@ eslint-plugin-jsx-a11y@^6.4.1:
     jsx-ast-utils "^3.1.0"
     language-tags "^1.0.5"
 
+eslint-plugin-prettier@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.4.0.tgz#cdbad3bf1dbd2b177e9825737fe63b476a08f0c7"
+  integrity sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 eslint-plugin-react-hooks@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz"
   integrity sha512-623WEiZJqxR7VdxFCKLI6d6LLpwJkGPYKODnkH3D7WpOG5KM8yWueBd8TLsNAetEJNF5iJmolaAKO3F8yzyVBQ==
 
-eslint-plugin-react@^7.23.1:
+eslint-plugin-react@^7.23.1, eslint-plugin-react@^7.24.0:
   version "7.24.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.24.0.tgz"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.24.0.tgz#eadedfa351a6f36b490aa17f4fa9b14e842b9eb4"
   integrity sha512-KJJIx2SYx7PBx3ONe/mEeMz4YE0Lcr7feJTCMyyKb/341NcjuAgim3Acgan89GfPv7nxXK2+0slu0CWXYM4x+Q==
   dependencies:
     array-includes "^3.1.3"
@@ -4201,9 +4208,9 @@ eslint-webpack-plugin@^2.5.3:
     normalize-path "^3.0.0"
     schema-utils "^3.0.0"
 
-eslint@^7.20.0:
+eslint@^7.20.0, eslint@^7.29.0:
   version "7.29.0"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-7.29.0.tgz"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.29.0.tgz#ee2a7648f2e729485e4d0bd6383ec1deabc8b3c0"
   integrity sha512-82G/JToB9qIy/ArBzIWG9xvvwL3R86AlCjtGw+A29OMZDqhTybz/MByORSukGxeI+YPCR4coYyITKk8BFH9nDA==
   dependencies:
     "@babel/code-frame" "7.12.11"
@@ -4511,6 +4518,11 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
+
+fast-diff@^1.1.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
+  integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
 fast-glob@^3.0.3, fast-glob@^3.1.1, fast-glob@^3.2.5:
   version "3.2.5"
@@ -8523,18 +8535,9 @@ postcss@8.2.6:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
-postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.2.9:
+postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.5:
   version "8.3.5"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.3.5.tgz"
-  integrity sha512-NxTuJocUhYGsMiMFHDUkmjSKT3EdH4/WbGF6GCi1NDGk+vbcUTun4fpbOqaPtD8IIsztA2ilZm2DhYCuyN58gA==
-  dependencies:
-    colorette "^1.2.2"
-    nanoid "^3.1.23"
-    source-map-js "^0.6.2"
-
-postcss@^8.3.5:
-  version "8.3.5"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.5.tgz#982216b113412bc20a86289e91eb994952a5b709"
   integrity sha512-NxTuJocUhYGsMiMFHDUkmjSKT3EdH4/WbGF6GCi1NDGk+vbcUTun4fpbOqaPtD8IIsztA2ilZm2DhYCuyN58gA==
   dependencies:
     colorette "^1.2.2"
@@ -8570,7 +8573,14 @@ prepend-http@^2.0.0:
   resolved "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier@^2.0.5:
+prettier-linter-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
+  integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
+  dependencies:
+    fast-diff "^1.1.2"
+
+prettier@^2.0.5, prettier@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.3.1.tgz"
   integrity sha512-p+vNbgpLjif/+D+DwAZAbndtRrR0md0MwfmOVN9N+2RgyACMT+7tfaRnT+WDPkqnuVwleyuBIG2XBxKDme3hPA==
