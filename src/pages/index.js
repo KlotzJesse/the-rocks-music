@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import '../styles/index.css';
 
 function Index() {
   
@@ -9,7 +8,7 @@ function Index() {
       <Helmet>
         <title>Gatsby + Node.js (TypeScript) API</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
+      <h1 class="text-6xl">Gatsby + Node.js (TypeScript) API</h1>
       
     </main>
   );
