@@ -2,19 +2,17 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
-import Band from "../components/band";
-import Events from "../components/events";
+import Team from "../components/team";
 
-const IndexPage = (): JSX.Element => (
+const BandPage = (): JSX.Element => (
   <main className="max-w-full">
     <Helmet>
       <title>Gatsby + Node.js (TypeScript) API</title>
     </Helmet>
     <Hero/>
-    <Band/>
-    <Events/>
+    <Team/>
     <Footer/>
   </main>
 );
 
-export default IndexPage;
+export default BandPage;
